@@ -1,159 +1,66 @@
 
-# Easter Company Web Repository
+# Overlord Server
 
 Contained within this repository is a collection of open source applications which are
 deployed on the [easter.company](https://easter.company) domain and are contained within
-the Overlord framework. You can find documentation for these applications in this
-repository [here.](https://github.com/eastercompany/overlord/docs) If you have any
-queries, bug reports or general requests please do not hesitate to get in touch using
+the Overlord framework. You can find documentation for these applications in each
+repositories readme file:
+<br/>
+
+[Overlord-Server](https://github.com/eastercompany/Overlord-Server/blob/main/README.md)
+<br/>
+
+[Overlord-Clients](https://github.com/eastercompany/Overlord-Clients/blob/main/README.md)
+<br/>
+
+[Overlord-Tools](https://github.com/eastercompany/Overlord-Tools/blob/main/README.md)
+<br/>
+
+If you have any queries, bug reports or general requests please do not hesitate to get in
+touch using <br/>
 [facebook](https://facebook.com/eastercompany) or
 [twitter](https://twitter.com/eastercompany).
 
 ## Local Host
 
-### Start Server
+For information on hosting & managing your application reference the Overlord-Tools README
+[here.](https://github.com/eastercompany/Overlord-Tools/blob/main/README.md) In summary
+to install Overlord-Tools on your system use the following command:
 
-<b>Server</b> will run on <b>port 8000</b>
 ```bash
-./manage.py server
+python manage.py tools install
 ```
 
-### Start Client
+And then you can use the following command to build, test and run your application:
 
-<b>Client</b> will run on <b>port 8100</b>
 ```bash
-./manage.py client
+./o start
 ```
 
-### Start Test Suite
+## Patch Notes 0.3.0
 
-<b>Pytest</b> Suite will run on your local machine
-```bash
-./manage.py test
-```
+Listed below is `new features`, `bug fixes` & `planned features` for the next release.<br>
+Tasks marked (:heavy_check_mark:) have been completed.<br>
+Tasks marked (:x:) have been discarded.<br>
+Tasks left unmarked are currently in development or will begin development soon.<br>
 
-### Start Server & Client
+### New Features
 
-<b>Server</b> will run on <b>port 8000</b><br/>
-<b>client</b> will run on <b>port 8100</b>
-```bash
-./manage.py run
-```
+...
 
-### Start Production Build Process
+### Bug Fixes
 
-When the production build is the latest version you won't need to run the client.
-```bash
-./manage.py build
-```
+...
 
-### Build, Test & Deploy
+### Task List
 
-This command will build the client, test the server & deploy on <b>port 8000</b>
-```bash
-./manage.py start
-```
-
-# Task List
-
-Listed below is the planned feature scope of the next stable build. <br>
-Tasks marked (<span style='color:green'> ✔ </span>) have been completed. <br>
-Tasks marked (<span style='color:red'> ⨯ </span>) have been discarded. <br>
-Tasks left unmarked are currently in development or will begin development soon. <br>
-
-# Patch 0.0.1
-
-### User API
-
-   1. Registers new users
-   2. Approves user login
-   3. ends user on logout
-
----
-
-### Journal API
-
-   1. Connects to database <span style='color:green'> ✔ </span>
-   2. Returns requested journal entry <span style='color:green'> ✔ </span>
-   3. Returns requested users journal entries <span style='color:green'> ✔ </span>
-   4. Consumes data for new journal entries
-      1. Head
-      2. Body
-      3. Type
-      4. Image
-      5. Set date
-      6. Set user
-
----
-
-### Following API
-
-   1. Follow user
-   2. Unfollow user
-   3. Return list of following
-   4. Return list of followers
-
----
-
-### User Pages
-
-   1. Register
-   2. Login
-
----
-
-### Journal Pages
-
-   1. New Entry Page
-      1. Consumes entry head  <span style='color:green'> ✔ </span>
-      2. Consumes entry body  <span style='color:green'> ✔ </span>
-      3. Consumes entry date  <span style='color:green'> ✔ </span>
-      4. Consumes entry user  <span style='color:green'> ✔ </span>
-      5. Consumes entry type  <span style='color:green'> ✔ </span>
-      6. Consumes entry image <span style='color:green'> ✔ </span>
-      7. Posts data to API
-   2. My Entries Page
-      1. Display entries      <span style='color:green'> ✔ </span>
-      2. Display picture      <span style='color:green'> ✔ </span>
-      3. Updates picture
-      4. Profile biography
-      5. Followers            <span style='color:green'> ✔ </span>
-      6. Following            <span style='color:green'> ✔ </span>
-      7. Follow Button
-      8. Fetches data from API
-   3. My Feed Page
-      1. Displays entries from followed users
-      2. Displays entries from followed topics
-      3. Suggests new users to follow           <span style='color:green'> ✔ </span>
-      4. Suggests new topics to follow          <span style='color:green'> ✔ </span>
-      5. Fetches data from API
-
----
-
-### Longterm Feature Section
-
-   1. Notifications
-   2. Direct Messages
-   3. Hashtags & Topics
-   4. User Settings
-   5. Easter Company Global Profile
+...
 
 <br />
 <br />
 <h2> Technology </h2>
 <table>
    <tr>
-      <td valign="middle">
-         <a href='https://reactjs.org/'>
-            <img
-               alt='React.js'
-               src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png'
-               width='64px'
-               height='64px'
-            />
-            <p align='center'> React.js </p>
-         </a>
-      </td>
       <td valign="middle">
          <a href='https://www.python.org/'>
             <img
@@ -163,17 +70,6 @@ Tasks left unmarked are currently in development or will begin development soon.
                height='64px'
             />
             <p align='center'> Python </p>
-         </a>
-      </td>
-      <td valign="middle">
-         <a href='https://nodejs.org/'>
-            <img
-               alt='Node.js'
-               src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png'
-               width='64px'
-               height='64px'
-            />
-            <p align='center'> Node.js </p>
          </a>
       </td>
       <td valign="middle">
